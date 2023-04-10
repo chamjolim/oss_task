@@ -9,6 +9,10 @@ def main():
     print("Welcome to calcuator")
     while check >= 1:        
         print("0: exit, 1: plus")
+        try:
+            check = int(input("Enter your choice: "))
+        except ValueError:
+            print("Please enter a valid integer choice")
         check = int(input())
         if check == 1:
             print("First Number")
